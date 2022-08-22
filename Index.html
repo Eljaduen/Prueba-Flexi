@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_copy.css">
     <script src="https://kit.fontawesome.com/61a8207d52.js" crossorigin="anonymous"></script>
     <script defer src="/JS.js"></script>
     <title>Flexi</title>
@@ -30,7 +30,7 @@
             <p>Un poco de magia, una pizca de amor, ese toque de la necesaria realidad y <span>esa llama que solo se      <br> enciende cuando nos visitas </span>(*GRRRR) </p>
             <article id="cont-header-btn">
                     <img id="primero" class="flecha-derecha"  src="/img/Grupo 2004.svg" alt="">
-                    <button type="button" class="btn primer-boton" data-bs-toggle="modal" data-bs-target="#mimodal" >¿Quieres magia en tu correo?</button>
+                    <button  type="button" class="primer-boton btn" data-bs-toggle="modal" data-bs-target="#mimodal" >¿Quieres magia en tu correo?</button>
                     <img  class="flecha-derecha"  src="/img/Grupo 2004.svg" alt="">
             </article>
             <img src="/img/Grupo 1961.svg" alt="">
@@ -38,14 +38,22 @@
 
     </header>
     <div id="contenedor-borde">
-        <img id="brazo-formula" src="/img/Grupo 2065.svg" alt="">
+
     </div>
     <main>
         <section id="section-formula">
-            <h1>La fórmula de la semana</h1>
-            <h3>Tú tranqui que ya fue analizada, testeada y aprobada</h3>
+          <div id="cont-tittle-formula" class="d-flex justify-content-center m-4">
+
+            <div class="">
+              <h1>La fórmula de la semana</h1>
+              <h3>Tú tranqui que ya fue analizada, testeada y aprobada</h3>
+            </div>
+
+          </div>
+
             <div id="contenedor-formula" class="d-flex container flex-column flex-lg-row align-items-center">
                 <article>
+                  <img class="" id="brazo-formula" src="/img/Grupo 2065.svg" alt="">
                     <div id="tittle-img-formula">TECNOLOGÍA</div>
                     <div id="img-tecno-formula"></div>
                 </article>
@@ -64,7 +72,7 @@
                 <img class="logo-ventas" id="logoventa1" src="/img/Grupo 2103.svg" alt="">
                 <div>
                     <h1>Lo Que Más Se Vendió</h1>
-                <h3>Bueno, no vendimos nada…Pero fueron esas <span>fórmulas top</span> que le arreglaron el día a más de uno</h3>
+                    <h3>Bueno, no vendimos nada…Pero fueron esas <span>fórmulas top</span> que le arreglaron el día a más de uno</h3>
                 </div>
                 <img class="logo-ventas" id="logoventa2" src="/img/Grupo 2103.svg" alt="">
             </div>
@@ -117,7 +125,7 @@
                 <div class="col columnas-cuartico">
                    <div class="tittle-categoria">
                         CATEGORIA
-                   </div> 
+                   </div>
                   <div class="card h-45 tarjeta-cuartico p-4">
                     <img src="/img/blanco.png" class="card-img-top img-tarjeta" alt="...">
                     <div class="card-body">
@@ -143,7 +151,7 @@
                 <div class="col columnas-cuartico">
                     <div class="tittle-categoria">
                          CATEGORIA
-                    </div> 
+                    </div>
                    <div class="card h-45 tarjeta-cuartico p-4">
                      <img src="/img/blanco.png" class="card-img-top img-tarjeta" alt="...">
                      <div class="card-body">
@@ -228,14 +236,14 @@
                 <i class="col fa-solid fa-circle circulo"></i>
                 <i class="col fa-solid fa-circle circulo"></i>
                 <i class="col fa-solid fa-circle circulo"></i>
-                <i class="col fa-solid fa-caret-right directf"></i> 
+                <i class="col fa-solid fa-caret-right directf"></i>
             </div>
             <div id="contenedor-titulo-etiqueta" class="d-flex align-items-center">
                 <h1 id="tittle-etiqueta" >ETIQUETAS</h1>
                 <img id="trazado" src="/img/Trazado 2719.svg" alt="">
                 <img id="larutasvg" src="/img/Grupo 2197.svg" alt="">
             </div>
-            <div id="back-etiqueta" ></div>            
+            <div id="back-etiqueta" ></div>
         </section>
         <div id="fondo-intermedio" class="text-center">
             <div id="cont-etiquetas" >
@@ -282,7 +290,7 @@
                     <form>
                         <div class="">
                           <input type="name" class="form-control inputs" id="exampleInputName" placeholder="Pon aquí tu nombre">
-                          
+
                         </div>
                         <div class="">
                           <input type="email" class="form-control inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo">
@@ -298,30 +306,44 @@
         </div>
     </footer>
     <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTittle">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">holis</div>
+        <div class="modal-dialog" id="contenedor-modal">
+            <div class="modal-content" style="background: transparent;">
                 <div class="modal-body">
-                    <p id="tunosotros">Tú, nosotros y tu correo...</p>
-                    <p id="segundoparrafo-form">La magia se materializa y nuestro amor también</p>
-                    <form>
-                        <div class="">
-                            <input type="name" class="form-control inputs" id="exampleInputName" placeholder="Pon aquí tu nombre">
+                    <button type="button" id="botoncerrar" data-bs-dismiss="modal"><img id="closboton" src="/img/circle-xmark-solid.svg" alt=""></button>
+                    <p id="tunosotros-modal">Tú, nosotros y tu correo...</p>
+                    <p id="segundoparrafo-modal">La magia se materializa y nuestro amor también</p>
+                    <form id="formulario-modal">
+                      <div>
+                        <input type="text" class="form-control inputs-modal texto" id="exampleInputNamemodal" placeholder="Pon aquí tu nombre">
+                        <div class="form-contorno">
+                          <!-- <small class="form-error visibility">Ups, algo pasó...</small> -->
+                          
+                        </div>
+                      </div>
+                      <div>
+                        <input type="text" class="form-control inputs-modal texto" id="exampleInputEmail1modal" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo">
+                        <div class="form-contorno">
+                          <!-- <small class="form-error visibility">Ups, algo pasó...</small> -->
+                          
+                        </div>
+                      </div>
+
+                        <div class="form-check div-check">
+                            <div id="segundo-input"></div>
+                            <input type="checkbox" class="form-check-input check-modal texto" id="check-modal">
+                            <label id="label-check-modal" class="form-check-label" for="check-modal">Aceptas las políticas de este amor y las condiciones de esta relación.</label>
                             
                         </div>
-                        <div class="">
-                            <input type="email" class="form-control inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo">
+                        <div class="form-contorno">
+                          <!-- <small class="form-error visibility">Ups, algo pasó...</small> -->
+                          
                         </div>
-                        <div class="form-check mb-4">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Aceptas las políticas de este amor y las condiciones de esta relación.</label>
-                        </div>
-                        <button type="submit" class="btn" id="ultimo-boton">Formalicemos lo nuestro</button>
+                        <button type="submit" class="btn" id="boton-modal" >Formalicemos lo nuestro</button>
                     </form>
                 </div>
-                <div class="modal-footer">holis</div>
             </div>
         </div>
     </div>
-</body>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
 </html>

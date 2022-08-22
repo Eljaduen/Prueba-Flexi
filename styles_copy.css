@@ -1,0 +1,727 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #5568F4;
+    width: 100vw;
+    height: 86.5%;
+    min-height: 692px;
+    position: relative;
+    background-image: url(/img/Grupo\ 2046.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    padding-top: 48px;
+    overflow-x: hidden;
+}
+#cont-nota{
+    width: 12.8%;
+    height: 10%;
+    max-width: 164px;
+    max-height: 64px;
+    min-width: 134px;
+    background-color: white;
+    border-radius: 0px 15.16px 15.16px 0px;
+    position: absolute;
+    z-index: 1;
+}
+#notaa {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #5568F4;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#con-primer-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.flechaizq {
+    margin-top: -160px;
+}
+@media (max-width: 925px) {
+    #flecha-izquierda1, #flecha-izquierda2 {
+    display: none;
+    }
+}
+#flecha-izquierda2 {
+    opacity: 0;
+}
+.contenedor-header {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    margin: 0 auto;
+}
+#logo {
+    margin-bottom: 23px;
+}
+#fondo-tittle {
+    margin: 0;
+    margin-bottom: 32px;
+    max-width: 736px;
+    padding: 6px 16px;
+    border-radius: 12px;
+    color: white;
+    background-color:rgba(255,255,255,0.23);
+
+}
+#fondo-tittle h1 {
+    font-size: 3.6rem;
+}
+section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+section p {
+    font-size: 2rem;
+    font-weight: 200;
+}
+section p span {
+    font-weight: 500;
+}
+.primer-boton {
+    min-width: 328px;
+    height: 48px;
+    width: 368px;
+    max-width: 368px;
+    max-height: 48px;
+    background-color: #FF3B67;
+    outline: none !important;
+    box-shadow: 0px 0px 14px #FF6464FA;
+    border-radius: 48px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    float: center;
+    margin-right: 10px;
+    border: none;
+}
+
+.primer-boton:hover {
+    background: #FF3B67 !important;
+    border: none;
+    outline: none !important;
+    text-decoration: none !important;
+}
+#cont-header-btn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+#primero {
+    opacity: 0;
+}
+@media (max-width: 938px) {
+    #primero {
+        display: none;
+    }
+}
+
+
+/* La formula de la semana*/
+
+
+#contenedor-borde {
+    margin-top: -13px;
+    height: 19.2px;
+    background-image: url(/img/Unión\ 1.svg);
+    border: none;
+}
+#brazo-formula {
+    margin-top: -204px;    
+    width: 187px;
+    height: 219px;
+    position: absolute;
+    margin-left: -36px;
+    z-index: 1;
+}
+
+#cont-tittle-formula div {
+    text-align: center;
+    
+}
+#section-formula {
+    padding: 72px;
+    padding-top: 0;
+    margin: 0 auto;
+    border: none;
+    min-height: 772px;
+    background-image: url(/img/Grupo\ 3327.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -55px left 94%;
+}
+@media (min-width: 1400px){
+    #section-formula {
+        background-position: bottom -55px right 20%;
+    }
+}
+#section-formula h1 {
+    margin-top: 84px;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    max-width: 752px;
+}
+#section-formula h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+#contenedor-formula{
+    max-width: 1136px;
+    margin: -15px auto;
+    gap: 32px;
+}
+#tittle-img-formula {
+    height: 52px;
+    width: 240px;
+    background-color: #999999;
+    border-radius: 10px 10px 0 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+#img-tecno-formula {
+    height: 528px;
+    width: 560px;
+    background-color: #F4F4F4;
+}
+#parrafo-formula {
+    max-width: 544px;
+}
+#parrafo-formula h2{
+    color: #999999;
+    font-size: 3.4rem;
+    font-weight: bolder;
+}
+#parrafo-formula p {
+    color: #999999;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.segundo-boton {
+    min-width: 328px;
+    height: 48px;
+    width: 352px;
+    max-width: 368px;
+    max-height: 48px;
+    background-color: #5568F4;
+    border-radius: 24px;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: white;
+    float: center;
+    margin-right: 10px;
+}
+#nolopienses-img {
+    width: 254px;
+    height: 27px;
+    margin: 14px auto auto 49px;
+}
+
+
+/* Lo que mas se vendió*/
+
+#section-ventas {
+    background-color: #F7F7F7;
+    padding: 72px !important;
+    padding-bottom: 20px !important;
+}
+#section-ventas h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    max-width: 775px;
+}
+#section-ventas h3 {
+    margin: 11px auto;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #4D4D4D;
+    max-width: 756px;
+}
+#section-ventas h3 span {
+    font-weight: 600;
+}
+.logo-ventas {
+    margin-top: -40px;
+    margin-left: 20px;
+}
+#logoventa2 {
+    opacity: 0;
+}
+@media (max-width: 840px) {
+    #logoventa2 {
+        display: none;
+    }
+}
+.cont-tarjetas {
+    margin: 0 auto;
+    max-width: 1136px;
+}
+.tarjeta {
+    border-radius: 16px;
+    box-shadow: 0px 0px 14px #0000007C;
+}
+.card-body {
+    border-top: 1px solid #E5E5E5;
+    color: #999999;
+}
+.card-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.card-text {
+    font-size: 1.5rem;
+}
+.img-tarjeta {
+    margin-top: 20px;
+    width: auto;
+    height: 128px;
+}
+
+
+
+/*Nuestro cuartico de San Alejo*/
+
+#ondulado {
+    width: 100%;
+    height: 125px;
+    background-image: url(/img/Trazado\ 3833.svg);
+    background-size: cover;
+
+}
+#section-cuartico {
+    padding-left: 72px;
+    padding-right: 72px;
+    background-image: url(/img/Grupo\ 2223.svg);
+    background-repeat: no-repeat;
+    background-position: bottom  right;
+}
+#tittle-cuartico {
+    margin-top: -95px;
+}
+#botella {
+    margin-left: -20px;
+}
+#san-alejo {
+    padding-top: 55px;
+    margin-left: 30px;
+    min-height: 142px;
+    min-width: 900px;
+    max-width: 900px !important;
+    margin-bottom: 28px;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    background-image: url(/img/Grupo\ 2137.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    letter-spacing: 1px;
+}
+@media (max-width: 1150px) {
+    #san-alejo {
+        background-image: none;
+        min-width: 0 !important;
+    }
+    #botella {
+        margin: auto;
+    }
+}
+.columnas-cuartico {
+    background-color: #F4F4F4;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 24px;
+    margin: 0 auto 38px auto;
+    gap: 16px;
+    max-width: 304px;
+}
+.tarjeta-cuartico {
+    border-radius: 16px;
+    box-shadow: 3px 3px 6px #00000040;
+    margin: 16px;
+}
+#categorias {
+    gap: 32px;
+    margin-top: 60px;
+    max-width: 976px;
+}
+@media (min-width: 1120px) {
+    #cuarto-columna {
+        display: none;
+    }
+
+}
+.tittle-categoria {
+    height: 56px;
+    width: 79%;
+    background-color: #797979;
+    border-radius: 10px 10px 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+    margin-top: -56px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slider-bar {
+    margin: -10px auto;
+    height: 48px;
+    max-width: 368px;
+
+}
+.circulo {
+    margin: auto;
+    font-size: 14px;
+    color: #E5E5E5;
+}
+.activo {
+    color: #5568F4;
+}
+.directf {
+    margin: auto;
+    font-size: 32px;
+    color: #5568F4;
+}
+
+/*ETIQUETAS */
+
+
+#contenedor-titulo-etiqueta {
+    margin-top: 156px;
+    height: 69px;
+}
+#back-etiqueta {
+    position: relative;
+    z-index: -1;
+    margin: -37px -72px 0 -72px;
+    height: 55px;
+    background-color: #F7F7F7;
+}
+#tittle-etiqueta {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    position: absolute;
+    z-index: 0;
+    width: 272px;
+    margin-top: -5px;
+}
+#trazado {
+    width: 272px;
+    margin-top: -8px;
+    position: relative;
+    z-index: 3;
+}
+#larutasvg {
+    width: 246px;
+    height: 30px;
+}
+#fondo-intermedio{
+    width: 100%;
+    background-color: #F7F7F7;
+    padding-top: 68px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+#cont-etiquetas {
+    max-width: 1136px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    align-content: stretch;
+}
+.etiquetas {
+    min-width: 174px;
+    height: 48px;
+    padding: 8px 16px;
+    box-shadow: 4px 4px 0px #999999;
+    border-radius: 48px;
+    background-color: white;
+    text-align: center;
+    color: #707070;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.grand {
+    flex-grow: 1.5;
+}
+#flecha-etiquetas {
+    margin: 32px auto;
+    margin-left: 10%;
+    margin-bottom: 72px;
+}
+
+/* footer */
+#contenedor-borde2 {
+    margin-right: -72px;
+    margin-left: -72px;
+    margin-bottom: -2px;
+    height: 19.2px;
+    background-image: url(/img/Unión\ 1.svg);
+    border: none;
+    rotate: 180deg;
+}
+footer {
+    min-height: 392px;
+    background-color: #5568F4;
+    padding-top: 10px;
+}
+
+#cont-footer {
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    color: white;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/*primera columna*/
+#logo-footer {
+    margin-left: 5.5%;
+    max-width: 352px;
+    height: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1084px){
+    #logo-footer {
+        margin-left: 1.5%;
+    }
+}
+/* segunda columna footer */
+#segunda-footer {
+    height: 288px;
+    padding-left: 16px;
+    border-left: 1px solid white;
+}
+#segunda-footer p {
+    margin-top: -6px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+ul {
+    min-height: 120px;
+    line-height: 2.8rem;
+}
+#cont-footer li {
+    list-style-type: none;
+}
+#cont-footer a {
+    color: white;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+#cont-footer li img {
+    margin-top: -15px;
+}
+
+.redes {
+    color: white;
+}
+#img-redes {
+    width: 204px;
+}
+/* tercera columna footer formulario*/
+#form-footer {
+    margin: 0 16px 0 auto;
+    width: 372px;
+    height: 384px;
+    background: #4859D2 0% 0% no-repeat padding-box;
+    border-radius: 28px 28px 0px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tunosotros {
+    margin-top: 40px;
+    margin-bottom: 2px;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+#segundoparrafo-form {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+.inputs {
+    margin-bottom: 28px;
+    height: 36px;
+    width: 332px;
+    background-color: #D6DBFF;
+    border-radius: 12px;
+    border: none;
+}
+.inputs::placeholder {
+    color: #7485FF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.form-check {
+    margin-top: -8px;
+    text-align: left;
+}
+.form-check label {
+    font-size: 1.4rem;
+    color: white;
+    width: 273.6px;
+}
+#exampleCheck1 {
+    margin: 9px 12px auto 10px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    background-color: #4859D2;
+}
+#ultimo-boton {
+    height: 48px;
+    width: 328px;
+    background-color: #FF3B67;
+    box-shadow: 0px 0px 14px #FF6464FA;
+    border-radius: 48px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* MODAL */
+.modal-body {
+    background-image: url(/img/Enmascarar\ grupo\ 1.svg);
+    background-repeat: no-repeat;
+}
+.modal-body {
+    background-color: #EFEFEF;
+    border-radius: 28px;
+    border: none;
+    min-width: 560px;
+}
+#closboton {
+    width: 50px;
+    height: 50px;
+    float: right;
+    color: #3946A4;
+}
+#tunosotros-modal {
+    margin-top: 324px;
+    margin-bottom: 2px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #4D4D4D;
+    text-align: center;
+}
+#segundoparrafo-modal {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.modal-content {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    -webkit-border: 0px !important;
+    -moz-border: 0px !important;
+    border: 0px !important;
+}
+.inputs-modal {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 400px;
+    height: 44px;
+    border: 1px solid #7E7E7E;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inputs-modal::placeholder {
+    font-size: 1.6rem;
+    color: #919191;
+    text-align: center;
+}
+.div-check {
+    margin: 12px auto 0 auto;
+}
+.check-modal {
+    margin-top: 4px;
+    margin-left: 82px !important;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    color: #707070 ;
+    background-color: #EFEFEF;
+    border: 2px solid #707070;
+}
+.check-modal:checked {
+    margin-top: 4px;
+    margin-left: 82px;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    color: #707070 ;
+    background-color: #EFEFEF;
+    border: 2px solid #707070;
+}
+
+#label-check-modal {
+    color: #707070;
+    font-size: 1.7rem;
+    width: 60%;
+}
+#boton-modal {
+    margin: 0px 110px 34px 110px;
+    width: 320px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #5568F4;
+}
+.error {
+    border-color: #FF3B67;
+    color: #FF3B67;
+}
+.form-error {
+    font-size: 1.4rem;
+    color: #FF3B67;
+    margin: -10px 130px 0px 225px; 
+    width: 297px;
+}
+#botoncerrar {
+    background: none;
+    border: none;
+    float: right;
+    margin-top: 2px;
+
+}
+.visibility {
+    display: none;
+}
