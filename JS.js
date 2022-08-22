@@ -4,10 +4,9 @@ const confirma = document.querySelectorAll('.texto')
 const usuario = `<small class="form-error">Ups, algo pasó...</small>`
 const errorcheck = `<small class="form-error">Ups, el check...</small>`
 const email = document.getElementById('exampleInputEmail1modal')
-const emailValue = email.value.trim();
-const mirar = document.getElementById('check-modal').checked;
-function isEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+const mirar = document.getElementById('check-modal');
+function isEmail(emailValue) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailValue);
 }
 
   confirma.forEach((texto, indice) => {
@@ -15,7 +14,7 @@ function isEmail(email) {
         e.preventDefault();
         revisarTexto(indice) 
         addErrores(indice)
-        console.log(mirar)
+        console.log(email.value)
     }) 
          
 })
@@ -26,7 +25,7 @@ function revisarTexto (indice) {
   if (confirma[indice].value === '') {
     confirma[indice].classList.add("error");
   } else if (indice == 1) {
-    if (isEmail(emailValue)) {
+    if (!isEmail(email.value)) {
       confirma[indice].classList.add("error");
     }
   }else {
@@ -40,13 +39,13 @@ function addErrores(indice){
     sginput[indice].innerHTML =  '';
     sginput[indice].innerHTML +=  usuario;
   } else if (indice == 1) {
-    if (isEmail(emailValue)) {
+    if (!isEmail(email.value)) {
       sginput[indice].innerHTML =  '';
       sginput[indice].innerHTML +=  usuario;
       
     }
   } else if (indice == 2) {
-    if (mirar){ 
+    if (valordelcheck == false){ 
       sginput[indice].innerHTML =  '';
       sginput[indice].innerHTML +=  errorcheck;
     }
@@ -62,3 +61,14 @@ document.querySelectorAll(".texto").forEach((element, indice) => {
   })
 })
 
+  console.log('El valor inicial del checkbox es ' + mirar.checked);
+var valordelcheck = 0;
+  mirar.addEventListener('click', function() {
+    if(mirar.checked) {
+      console.log ('El elemento está marcado');
+      valordelcheck = true ; 
+    } else {
+      console.log('Ahora está desmarcado');
+      valordelcheck = false ;
+    }
+  });
