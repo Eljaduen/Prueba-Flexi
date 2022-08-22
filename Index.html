@@ -287,19 +287,24 @@
                 <div id="form-footer">
                     <p id="tunosotros">Tú, nosotros y tu correo...</p>
                     <p id="segundoparrafo-form">La magia se materializa y nuestro amor también</p>
-                    <form>
-                        <div class="">
-                          <input type="name" class="form-control inputs" id="exampleInputName" placeholder="Pon aquí tu nombre">
+                    <form id="fomulario-footer">
+                      <input type="name" class="form-control inputs" id="exampleInputName" placeholder="Pon aquí tu nombre">
+                        <div class="rellenado-inputs">
+                          
 
                         </div>
-                        <div class="">
-                          <input type="email" class="form-control inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo">
+                        <input type="email" class="form-control inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo">
+                        <div class="rellenado-inputs">
+                          
                         </div>
                         <div class="form-check mb-4">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Aceptas las políticas de este amor y las condiciones de esta relación.</label>
                         </div>
-                        <button type="submit" class="btn" id="ultimo-boton">Formalicemos lo nuestro</button>
+                        <div class="rellenado-inputs">
+                          
+                        </div>
+                        <button type="submit" class="btn" id="ultimo-boton" data-bs-toggle="modal" data-bs-target="#mimodal2">Formalicemos lo nuestro</button>
                     </form>
                 </div>
             </div>
@@ -308,8 +313,8 @@
     <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTittle">
         <div class="modal-dialog" id="contenedor-modal">
             <div class="modal-content" style="background: transparent;">
-                <div class="modal-body">
-                    <button type="button" id="botoncerrar" data-bs-dismiss="modal"><img id="closboton" src="/img/circle-xmark-solid.svg" alt=""></button>
+                <div class="modal-body" id="modal-body1">
+                    <button type="button" class="botoncerrar" data-bs-dismiss="modal"><img class="closboton" src="/img/circle-xmark-solid.svg" alt=""></button>
                     <p id="tunosotros-modal">Tú, nosotros y tu correo...</p>
                     <p id="segundoparrafo-modal">La magia se materializa y nuestro amor también</p>
                     <form id="formulario-modal">
@@ -340,6 +345,21 @@
                         </div>
                         <button type="submit" class="btn" id="boton-modal" >Formalicemos lo nuestro</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="mimodal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTittle">
+      <div class="modal-dialog" id="contenedor-modal2">
+          <div class="modal-content" style="background: transparent;">
+              <div class="modal-body" id="modal-body2">
+                  <button type="button" class="botoncerrar" data-bs-dismiss="modal"><img class="closboton" src="/img/circle-xmark-solid.svg" alt=""></button>
+                  <img id="img1-modal2" src="/img/Grupo 2365.svg" alt="">
+                  <p id="gracias-modal2">¡Gracias guapura!</p>
+                  <p id="segundoparrafo-modal2">Formalizamos lo nuestro. <br> Lo nuestro es tuyo, lo tuyo es nuestro.</p>
+                  <button type="submit" class="btn" id="boton-modal2" data-bs-dismiss="modal">Eche pa’l cuartico</button>
+                  <img id="img2-modla2" src="/img/Grupo 2368.svg" alt="">
                 </div>
             </div>
         </div>

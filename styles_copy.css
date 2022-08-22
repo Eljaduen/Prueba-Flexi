@@ -570,12 +570,15 @@ ul {
     margin-bottom: 28px;
 }
 .inputs {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     height: 36px;
     width: 332px;
     background-color: #D6DBFF;
     border-radius: 12px;
     border: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #3946A4;
 }
 .inputs::placeholder {
     color: #7485FF;
@@ -611,18 +614,16 @@ ul {
 }
 
 
-/* MODAL */
-.modal-body {
+/* MODAL  1*/
+#modal-body1 {
     background-image: url(/img/Enmascarar\ grupo\ 1.svg);
     background-repeat: no-repeat;
-}
-.modal-body {
     background-color: #EFEFEF;
     border-radius: 28px;
     border: none;
     min-width: 560px;
 }
-#closboton {
+.closboton {
     width: 50px;
     height: 50px;
     float: right;
@@ -715,13 +716,64 @@ ul {
     margin: -10px 130px 0px 225px; 
     width: 297px;
 }
-#botoncerrar {
+.botoncerrar {
     background: none;
     border: none;
     float: right;
     margin-top: 2px;
 
 }
-.visibility {
-    display: none;
+
+
+/* MODAL 2 */ 
+#modal-body2 {
+    background-image: url(/img/Grupo\ 2359@2x.png);
+    background-repeat: no-repeat;
+    background-color: #F9F9F9;
+    background-size: 371px;
+    background-position: top 6px left 95px;
+    border-radius: 28px;
+    border: none;
+    min-width: 560px;
+    min-height: 720px;
+}
+#gracias-modal2 {
+    margin-top: -55px;
+    text-align: center;
+    color: #4D4D4D;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+#img1-modal2 {
+    margin-top: 400px;
+    position: relative;
+    margin-left: 20px;
+}
+#segundoparrafo-modal2 {
+    color: #4D4D4D;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#boton-modal2 {
+    margin: 0px 110px 34px 110px;
+    width: 320px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #5568F4;
+}
+#img2-modla2 {
+    position: relative;
+    margin-left: 330px;
+    margin-top: -45px;
+}
+.form-error2 {
+    font-size: 1.4rem;
+    color: white;
+    margin: -20px 130px 0px 125px; 
+    width: 297px;
 }
